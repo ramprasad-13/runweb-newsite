@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | RunWeb</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect x='0' y='0' width='512' height='512' rx='100' fill='%234f46e5'/%3E%3Cpath d='M112 352 L208 256 L288 336 L400 224' stroke='white' stroke-width='40' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M400 224 L400 300 M400 224 L324 224' stroke='white' stroke-width='40' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Crect x='128' y='128' width='256' height='256' rx='20' stroke='white' stroke-width='25' fill='none' opacity='0.3'/%3E%3C/svg%3E">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        indigo: { 50: '#eef2ff', 100: '#e0e7ff', 600: '#4f46e5', 700: '#4338ca', 900: '#312e81' },
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>body { font-family: 'Poppins', sans-serif; } h1, h2 { font-family: 'Montserrat', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/" class="flex items-center gap-2 group">
+                    <div class="bg-indigo-600 text-white p-2 rounded-lg">
+                        <i class="fas fa-code text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-900 tracking-tight">Run<span class="text-indigo-600">Web</span></span>
+                </a>
+                <a href="/" class="text-gray-600 hover:text-indigo-600 font-medium transition">Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 py-20">
+        <div class="relative mb-8">
+            <div class="absolute inset-0 bg-indigo-100 rounded-full animate-pulse opacity-50 blur-xl"></div>
+            <div class="relative bg-white p-6 rounded-full shadow-lg border-2 border-indigo-50">
+                <i class="fas fa-ghost text-6xl text-indigo-600"></i>
+            </div>
+        </div>
+        
+        <h1 class="text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-4">404</h1>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Oops! Page Not Found</h2>
+        <p class="text-gray-600 max-w-md mx-auto mb-8">
+            The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+        </p>
+        
+        <a href="/" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-indigo-700 hover:shadow-indigo-500/30 transition transform hover:-translate-y-1">
+            <i class="fas fa-home"></i> Go Back Home
+        </a>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800 text-center">
+        <p class="text-gray-500 text-sm">
+            &copy; 2025 RunWeb. We Build. You Grow.
+        </p>
+    </footer>
+
+</body>
+</html>
